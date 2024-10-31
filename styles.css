@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  padding-top: 70px;
+  font-family: 'Philosopher', sans-serif;
+  background-image: url("background/BG_starry.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #000000;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  color: #d2bc8e;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  font-size: 14px;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+nav li.active a {
+  color: #D2BC8E;
+}
+
+.content {
+  height: fit-content;
+  width: 75%;
+  margin: auto;
+  padding: 30px;
+}
+
+.filters {
+  margin-top: 20px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.filters .filters-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.filters .filters-list .filters-item {
+    max-width: 50px;
+    max-height: 40px;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.filters .filters-list .filters-divider {
+    width: 1px;
+    height: 30px;
+    background: #d2bc8e;
+    margin: 0 20px;
+}
+
+.filters .filters-list .filters-item.active {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.character-list {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border-radius: 4px;
+  justify-content: center;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+.character-portrait {
+  width: 13%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+}
+
+.character-name {
+  width: 100%;
+  font-style: 'Philosopher', Arial;
+  font-size: 14px;
+  color: #4c5569;
+  font-weight: bold;
+  margin: 0px auto auto auto;
+  text-align: center;
+  background-color: #e9e5db;
+  border-radius: 0 0 5px 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.character_archive {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centered-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.character-icon {
+  width: 100%;
+  height: 70%;
+  border-radius: 5px 5px 20px 0;
+}
+
+.element-type {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+}
+
+.character-link {
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+
+.character-link:hover .character-icon {
+  filter: brightness(80%);
+}
+
+.character-link:hover {
+  cursor: pointer;
+}
+
+/* .geo {
+  filter: drop-shadow(0 0 0.2rem yellow);
+}
+
+.dendro {
+  filter: drop-shadow(0 0 0.2rem green);
+}
+
+.cryo {
+  filter: drop-shadow(0 0 0.2rem cyan);
+}
+
+.hydro {
+  filter: drop-shadow(0 0 0.2rem blue);
+}
+
+.electro {
+  filter: drop-shadow(0 0 0.2rem purple);
+}
+
+.pyro {
+  filter: drop-shadow(0 0 0.2rem red);
+}
+
+.anemo {
+  filter: drop-shadow(0 0 0.2rem aqua);
+} */
+
+.rarity-4 {
+  background-image: url(background/BG_Item_4_Star.png);
+  background-size: cover;
+}
+
+.rarity-5 {
+  background-image: url(background/BG_Item_5_Star.png);
+  background-size: cover;
+}
+
+.character-icon-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #e9e5db;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}

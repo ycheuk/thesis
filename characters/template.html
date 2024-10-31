@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="characters.css">
+    <title>Genshin Impact Guide</title>
+</head>
+<style>
+  body {
+    <!-- background-image: url("../background/BG_ELEMENT.png"); -->
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+</style>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- <img src="visions/REGION_ELEMENT.png" alt="REGION ELEMENT" class="header-vision"> -->
+            <!-- <h1 class="header-title">NAME</h1> -->
+        </div>
+        <div class="header-exit">
+            <a href="../index.html" class="back-link">
+              <img src="../icons/exit-button.png" alt="Back Arrow" class="header-icon">
+            </a>
+        </div>
+    </header>
+    <section class="content">
+      <nav class="navigation">
+          <ul>
+              <li><a href="#" onclick="showContent('profile')">Profile</a></li>
+              <li><a href="#" onclick="showContent('weapons')">Weapons</a></li>
+              <li><a href="#" onclick="showContent('artifacts')">Artifacts</a></li>
+              <li><a href="#" onclick="showContent('constellations')">Constellations</a></li>
+              <li><a href="#" onclick="showContent('talents')">Talents</a></li>
+              <li><a href="#" onclick="showContent('teams')">Teams</a></li>
+          </ul>
+      </nav>
+      <div id="profile-content" class="profile-content">
+        <!-- <img class="character_wish" src="character_wish/CHARACTER.png" alt="CHARACTER"> -->
+        <div class="profile-details">
+          <!-- <h1 class="name" style="font-size: 30px;">NAME</h1> -->
+          <!-- <h1 style="font-size: 20px; color: #deb76c;">TITLE</h1> -->
+          <div class="info-line">
+            <div><h2 class="left-align profile-description voice" style="margin-top: 30px;">Voice:</h2></div>
+            <!-- <div><h4 class="right-align profile-description" style="margin-top: 30px;">English: <a href="https://www.imdb.com/name/nm6004732/" style="white-space: nowrap; color: #deb76c;">VA</a></h4>
+            <h4 class="right-align profile-description">Chinese: <a href="https://zh.moegirl.org.cn/Mace" style="white-space: nowrap; color: #deb76c;">VA</a></h4>
+            <h4 class="right-align profile-description">Japanese: <a href="http://en.wikipedia.org/wiki/Kenji_Nojima" style="white-space: nowrap; color: #deb76c;">VA</a></h4>
+            <h4 class="right-align profile-description">Korean: <a href="https://ko.wikipedia.org/wiki/%EA%B9%80%EB%AA%85%EC%A4%80_(%EC%84%B1%EC%9A%B0)" style="white-space: nowrap; color: #deb76c;">VA</a></h4></div> -->
+          </div>
+          <div class="separator"></div>
+          <div class="info-line">
+              <h2 class="right-align profile-description">Birthday</h2>
+              <!-- <h2 class="left-align profile-description">01/01</h2> -->
+          </div>
+          <div class="info-line">
+              <h2 class="right-align profile-description">Affiliation</h2>
+              <!-- <h2 class="left-align profile-description">AFFILIATION</h2> -->
+          </div>
+          <div class="info-line">
+              <h2 class="right-align profile-description">Vision</h2>
+              <!-- <h2 class="left-align profile-description">ELEMENT</h2> -->
+          </div>
+          <div class="info-line">
+              <h2 class="right-align profile-description">Constellation</h2>
+              <!-- <h2 class="left-align profile-description">CONSTELLATION</h2> -->
+          </div>
+          <!-- <h2 class="description">DESCRIPTION</h2> -->
+        </div>
+      </div>
+      <div id="weapons-content" class="weapons-content">
+        <table class="weapons-table">
+          <tr>
+            <th width=12%></th>
+            <th width=23%><h1>Weapon</h1></th>
+            <th width=65%><h1>Weapon Information</h1></th>
+          </tr>
+          <tr>
+            <th><h3><b>1st</b></h3></th>
+            <th>
+              <img class="weapon-icon rarity-4" src="../weapons/Cinnabar_Spindle.png" alt=""><h3 class="weapon-name"><b>Cinnabar Spindle</b></h3>
+            </th>
+            <th class="no-align">
+              <h4><b>Base ATK</b>: 454</h4>
+              <h4><b>Bonus Stat</b>: DEF 69.0%</h4>
+              <h4><b>Skill Effect</b>: Elemental Skill DMG is increased by 40% of DEF. The effect will be triggered no more than once every 1.5s and will be cleared 0.1s after the Elemental Skill deals DMG.</h4>
+            </th>
+          </tr>
+          <tr>
+            <th><h3><b>2nd</b></h3></th>
+            <th>
+              <img class="weapon-icon rarity-5" src="../weapons/Primordial_Jade_Cutter.png" alt=""><h3 class="weapon-name"><b>Primordial Jade Cutter</b></h3>
+            </th>
+            <th class="no-align">
+              <h4><b>Base ATK</b>: 542</h4>
+              <h4><b>Bonus Stat</b>: CRIT Rate 44.1%</h4>
+              <h4><b>Skill Effect</b>: HP increased by 20%. Additionally, provides an ATK Bonus based on 1.2% of the wielder’s Max HP.</h4>
+            </th>
+          </tr>
+          <tr>
+            <th><h3><b>3rd</b></h3></th>
+            <th>
+              <img class="weapon-icon rarity-4" src="../weapons/Wolf-Fang.png" alt=""><h3 class="weapon-name"><b>Wolf-Fang</b></h3>
+            </th>
+            <th class="no-align">
+              <h4><b>Base ATK</b>: 510</h4>
+              <h4><b>Bonus Stat</b>: CRIT Rate 27.6%</h4>
+              <h4><b>Skill Effect</b>: DMG dealt by Elemental Skill and Elemental Burst is increased by 16%. When an Elemental Skill hits an opponent, its CRIT Rate will be increased by 2%. When an Elemental Burst hits an opponent, its CRIT Rate will be increased by 2%. Both of these effects last 10s separately, have 4 max stacks, and can be triggered once every 0.1s.</h4>
+            </th>
+          </tr>
+          <tr>
+            <th><h3><b>4th</b></h3></th>
+            <th>
+              <img class="weapon-icon rarity-5" src="../weapons/Freedom-Sworn.png" alt=""><h3 class="weapon-name"><b>Freedom Sword</b></h3>
+            </th>
+            <th class="no-align">
+              <h4><b>Base ATK</b>: 608</h4>
+              <h4><b>Bonus Stat</b>: Elemental Mastery 198</h4>
+              <h4><b>Skill Effect</b>: Increases DMG by 10%. When characters with Freedom-Sworn trigger Elemental Reactions, they gain a Sigil of Rebellion (once every 0.5s). This triggers even if they aren't on the field. When you reach 2 Sigils, they will be consumed which grants nearby party members 20% ATK and 16% Normal, Charged, and Plunging Attack DMG for 12s. Once triggered, you gain no Sigils for 20s. The same buffs from the Millennial Movement series does not stack.</h4>
+            </th>
+          </tr>
+        </table>
+      </div>
+      <div id="artifacts-content" class="artifacts-content" style="display: flex;">
+        <div class="stats-recommendations">
+          <h1 class="artifact-title">Geo Sub DPS</h1>
+          <table class="artifacts-table">
+            <tr>
+              <th width=30% rowspan="3">Main Stats</th>
+              <th width=70%><img class="artifact-pieces" src="../icons/sands.png" alt="sands"><h4><b>Sands</b>:<br>DEF%</h4></th>
+            </tr>
+            <tr>
+              <th><nobr><img class="artifact-pieces" src="../icons/goblet.png" alt="goblet"><h4><b>Goblet</b>:<br>Geo DMG Bonus</h4></nobr></th>
+            </tr>
+            <tr>
+              <th><img class="artifact-pieces" src="../icons/circlet.png" alt="circlet"><h4><b>Circlet</b>:<br>CRIT Rate or CRIT DMG</h4></th>
+            </tr>
+            <tr>
+              <th>Substats</th>
+              <th colspan="2">DEF%, CRIT Rate, CRIT DMG</th>
+            </tr>
+          </table>
+        </div>
+        <div class="artifact-recommendations">
+          <h1 class="artifact-title">Best Artifacts</h1>
+          <table class="artifacts-table">
+            <tr>
+              <th>1st</th>
+              <th><img class="artifact-icon rarity-5" src="../artifacts/Bloom_Times.png" alt="Bloom_Times"><br>Husk of Opulent Dreams x4</th>
+            </tr>
+            <tr>
+              <th>2nd</th>
+              <th><img class="artifact-icon rarity-5" src="../artifacts/Golden_Songs_Variation.png" alt="Golden_Songs_Variation"><br>Golden Troupe x4</th>
+            </tr>
+            <tr>
+              <th rowspan="2">3rd</th>
+              <th><img class="artifact-icon rarity-5" src="../artifacts/Bloom_Times.png" alt="Bloom_Times"><br>Husk of Opulent Dreams x2</th>
+            </tr>
+            <tr>
+              <th><img class="artifact-icon rarity-5" src="../artifacts/Golden_Songs_Variation.png" alt="Golden_Songs_Variation"><br>Golden Troupe x2</th>
+            </tr>
+            <tr>
+              <th>4-star</th>
+              <th><img class="artifact-icon rarity-4" src="../artifacts/Guardians_Flower.png" alt="Guardians_Flower"><br>Defender's Will x4</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="constellations-content" class="constellations-content">
+        <img src="../constellations/Cretaceus_Shape.png" class="constellation" alt="constellation">
+        <table class="artifacts-table constellations-table">
+          <tr>
+            <th></th>
+            <th>Rating</th>
+            <th>Constellation Effect / Merits</th>
+          </tr>
+          <tr>
+            <th>C1</th>
+            <th></th>
+            <th><b>Flower of Eden</b><br><h4>Transient Blossoms generated by Albedo's Abiogenesis: Solar Isotoma regenerate 1.2 Energy for Albedo.</h4></th>
+          </tr>
+          <tr>
+            <th>C2</th>
+            <th></th>
+            <th><b>Opening of Phanerozoic</b><br><h4>Transient Blossoms generated by Abiogenesis: Solar Isotoma grant Albedo Fatal Reckoning for 30s: Each stack of Fatal Reckoning increases DMG by 30% of Albedo's DEF. The effect stacks up to 4 times.<br>Unleashing Rite of Progeniture: Tectonic Tide consumes all stacks of Fatal Reckoning, increasing the DMG dealt by the Tectonic Tide and Fatal Blossoms based on the number of stacks consumed.</h4></th>
+          </tr>
+          <tr>
+            <th>C3</th>
+            <th></th>
+            <th><b>Grace of Helios</b><br><h4>Increase the Level of Abiogenesis: Solar Isotoma by 3. Maximum upgrade level is 15.</h4></th>
+          </tr>
+          <tr>
+            <th>C4</th>
+            <th></th>
+            <th><b>Descent of Divinity</b><br><h4>Solar Isotoma increases Plunging Attack DMG by 30% for active party members within the AoE.</h4></th>
+          </tr>
+          <tr>
+            <th>C5</th>
+            <th></th>
+            <th><b>Tide of Hadean</b><br><h4>Increases the Level of Rite of Progeniture: Tectonic Tide by 3. Maximum Upgrade level is 15.</h4></th>
+          </tr>
+          <tr>
+            <th>C6</th>
+            <th></th>
+            <th><b>Dust of Purification</b><br><h4>If active party members within the AoE are protected by a shield created by Crystallize, Solar Isotoma increases their DMG by 17%.</h4></th>
+          </tr>
+        </table>
+      </div>
+      <div id="talents-content" class="talents-content">
+        <div><h1 class="name">Talent Priority</h1></div>
+        <div class="row"><table class="talents-table">
+          <tr>
+            <td></td>
+            <td><b>Main DPS</b></td>
+          </tr>
+          <tr>
+            <td>1st</td>
+            <td>Elemental Skill</td>
+          </tr>
+          <tr>
+            <td>2nd</td>
+            <td>Elemental Burst</td>
+          </tr>
+          <tr>
+            <td>3rd</td>
+            <td>Normal Attack</td>
+          </tr>
+          <tr>
+            <td colspan="2"><h4>You should prioritize Albedo's elemental skill first as most of his DMG comes from that talent.</h4></td>
+          </tr>
+        </table>
+        <table class="talents-table">
+          <tr>
+            <td></td>
+            <td><b>Burst DPS</b></td>
+          </tr>
+          <tr>
+            <td>1st</td>
+            <td>Elemental Burst</td>
+          </tr>
+          <tr>
+            <td>2nd</td>
+            <td>Elemental Skill</td>
+          </tr>
+          <tr>
+            <td>3rd</td>
+            <td>Normal Attack</td>
+          </tr>
+          <tr>
+            <td colspan="2"><h4>If you are using him as a burst DPS, then his elemental burst should get priority.</h4></td>
+          </tr>
+        </table></div>
+      </div>
+      <div id="teams-content" class="teams-content">
+      <h1 class="name">Team Options</h1>
+      <table class="teams-table">
+        <tr>
+          <td>1st</td>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Arataki_Itto_Icon.png" class="character-icon rarity-5" alt="Arataki_Itto"></div>
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Arataki Itto</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Albedo_Icon.png" class="character-icon rarity-5" alt="Albedo"></div>
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Albedo</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Gorou_Icon.png" class="character-icon rarity-4" alt="Gorou"></div>
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Gorou</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Zhongli_Icon.png" class="character-icon rarity-5" alt="Zhongli"></div>
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Zhongli</h2>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>2nd</td>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Xiao_Icon.png" class="character-icon rarity-5" alt="Xiao"></div>
+              <img src="../element_types/anemo.png" class="element-type anemo" alt="anemo">
+              <h2 class="character-name">Xiao</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Albedo_Icon.png" class="character-icon rarity-5" alt="Albedo"></div>
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Albedo</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Jean_Icon.png" class="character-icon rarity-5" alt="Jean"></div>
+              <img src="../element_types/anemo.png" class="element-type anemo" alt="anemo">
+              <h2 class="character-name">Jean</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Zhongli_Icon.png" class="character-icon rarity-5" alt="Zhongli"></div>
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Zhongli</h2>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+
+      </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            showContent('profile');
+        });
+
+        function showContent(section) {
+            const contentContainer = document.getElementById('contentContainer');
+            const profileContent = document.getElementById('profile-content');
+            const weaponsContent = document.getElementById('weapons-content');
+            const artifactsContent = document.getElementById('artifacts-content');
+            const constellationsContent = document.getElementById('constellations-content');
+            const talentsContent = document.getElementById('talents-content');
+            const teamsContent = document.getElementById('teams-content');
+
+            if (section === 'profile') {
+                profileContent.style.display = 'flex';
+                weaponsContent.style.display = 'none';
+                artifactsContent.style.display = 'none';
+                constellationsContent.style.display = 'none';
+                talentsContent.style.display = 'none';
+                teamsContent.style.display = 'none';
+            } else if (section === 'weapons') {
+                profileContent.style.display = 'none';
+                weaponsContent.style.display = 'block';
+                artifactsContent.style.display = 'none';
+                constellationsContent.style.display = 'none';
+                talentsContent.style.display = 'none';
+                teamsContent.style.display = 'none';
+            } else if (section === 'artifacts') {
+                profileContent.style.display = 'none';
+                weaponsContent.style.display = 'none';
+                artifactsContent.style.display = 'flex';
+                constellationsContent.style.display = 'none';
+                talentsContent.style.display = 'none';
+                teamsContent.style.display = 'none';
+            } else if (section === 'constellations') {
+                profileContent.style.display = 'none';
+                weaponsContent.style.display = 'none';
+                artifactsContent.style.display = 'none';
+                constellationsContent.style.display = 'flex';
+                talentsContent.style.display = 'none';
+                teamsContent.style.display = 'none';
+            } else if (section === 'teams') {
+                profileContent.style.display = 'none';
+                weaponsContent.style.display = 'none';
+                artifactsContent.style.display = 'none';
+                constellationsContent.style.display = 'none';
+                talentsContent.style.display = 'none';
+                teamsContent.style.display = 'flex';
+            } else if (section === 'talents') {
+                profileContent.style.display = 'none';
+                weaponsContent.style.display = 'none';
+                artifactsContent.style.display = 'none';
+                constellationsContent.style.display = 'none';
+                talentsContent.style.display = 'none';
+                talentsContent.style.display = 'block';
+                teamsContent.style.display = 'none';
+            } else {
+                profileContent.style.display = 'none';
+                weaponsContent.style.display = 'none';
+                artifactsContent.style.display = 'none';
+                constellationsContent.style.display = 'none';
+                teamsContent.style.display = 'none';
+
+                let sectionContent = '';
+                switch(section) {
+                    case 'talents':
+                        sectionContent = 'Your Talents Content Here...';
+                        break;
+                    default:
+                        sectionContent = 'Default Content';
+                }
+                contentContainer.innerHTML = sectionContent;
+            }
+        }
+    </script>
+</body>
+</html>

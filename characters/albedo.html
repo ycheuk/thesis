@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="characters.css">
+    <title>Genshin Impact Guide</title>
+</head>
+<style>
+  body {
+    background-image: url("../background/BG_geo.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+</style>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="visions/Mondstadt_Geo.png" alt="Mondstadt Geo" class="header-vision">
+            <h1 class="header-title">Albedo</h1>
+        </div>
+        <div class="header-exit">
+            <a href="../index.html" class="back-link">
+              <img src="../icons/exit-button.png" alt="Back Arrow" class="header-icon">
+            </a>
+        </div>
+    </header>
+    <section class="content">
+      <nav class="navigation">
+          <ul>
+              <li><a href="#profile" onclick="showContent('profile')">Profile</a></li>
+              <li><a href="#weapons" onclick="showContent('weapons')">Weapons</a></li>
+              <li><a href="#artifacts" onclick="showContent('artifacts')">Artifacts</a></li>
+              <li><a href="#constellations" onclick="showContent('constellations')">Constellations</a></li>
+              <li><a href="#talents" onclick="showContent('talents')">Talents</a></li>
+              <li><a href="#teams" onclick="showContent('teams')">Teams</a></li>
+              <li><a href="#starter-build" onclick="showContent('starter')">Starter Build</a></li>
+          </ul>
+      </nav>
+      <div id="profile-content" class="profile-content">
+        <img class="character_wish" src="character_wish/albedo.png" alt="albedo">
+        <div class="profile-details">
+          <h1 class="name" style="font-size: 30px;">Albedo</h1>
+          <h1 style="font-size: 20px; color: #deb76c;">Kreideprinz</h1>
+          <!-- <div class="info-line">
+            <div><h2 class="left-align profile-description voice" style="margin-top: 30px;">Voice:</h2></div>
+            <div><h4 class="right-align profile-description" style="margin-top: 30px;">English: <a href="https://www.imdb.com/name/nm6004732/" style="white-space: nowrap; color: #deb76c;">Khoi Dao</a></h4>
+            <h4 class="right-align profile-description">Chinese: <a href="https://zh.moegirl.org.cn/Mace" style="white-space: nowrap; color: #deb76c;">Mace</a></h4>
+            <h4 class="right-align profile-description">Japanese: <a href="http://en.wikipedia.org/wiki/Kenji_Nojima" style="white-space: nowrap; color: #deb76c;">Nojima Kenji</a></h4>
+            <h4 class="right-align profile-description">Korean: <a href="https://ko.wikipedia.org/wiki/%EA%B9%80%EB%AA%85%EC%A4%80_(%EC%84%B1%EC%9A%B0)" style="white-space: nowrap; color: #deb76c;">Kim Myung-jun</a></h4></div>
+          </div> -->
+          <h2 class="voice">Voice:</h2>
+          <h4 style="margin-left: 20px;">English: <a href="https://www.imdb.com/name/nm6004732/" style="white-space: nowrap; color: #deb76c;">Khoi Dao</a></h4>
+          <h4 style="margin-left: 20px;">Chinese: <a href="https://zh.moegirl.org.cn/Mace" style="white-space: nowrap; color: #deb76c;">Mace</a></h4>
+          <h4 style="margin-left: 20px;">Japanese: <a href="http://en.wikipedia.org/wiki/Kenji_Nojima" style="white-space: nowrap; color: #deb76c;">Nojima Kenji (野島 健児)</a></h4>
+          <h4 style="margin-left: 20px;">Korean: <a href="https://ko.wikipedia.org/wiki/%EA%B9%80%EB%AA%85%EC%A4%80_(%EC%84%B1%EC%9A%B0)" style="white-space: nowrap; color: #deb76c;">Kim Myung-jun (김명준)</a></h4>
+          <div class="separator"></div>
+          <div class="info-line">
+              <h2 class="right-align profile-description">Birthday</h2>
+              <h2 class="left-align profile-description">9/13</h2>
+          </div>
+          <div class="info-line">
+              <h2 class="right-align profile-description">Affiliation</h2>
+              <h2 class="left-align profile-description">Knights of Favonius</h2>
+          </div>
+          <div class="info-line">
+              <h2 class="right-align profile-description">Vision</h2>
+              <h2 class="left-align profile-description">Geo</h2>
+          </div>
+          <div class="info-line">
+              <h2 class="right-align profile-description">Constellation</h2>
+              <h2 class="left-align profile-description">Princeps Cretaceus</h2>
+          </div>
+          <h2 class="description">A genius known as the Kreideprinz, he is the Chief Alchemist and Captain of the Investigation Team of the Knights of Favonius.</h2>
+        </div>
+      </div>
+      <div id="weapons-content" class="weapons-content">
+        <table class="weapons-table">
+          <tr>
+            <th width=12%></th>
+            <th width=18%><h1>Weapon</h1></th>
+            <th width=45%><h1>Weapon Information</h1></th>
+            <th width=25%>Notes</th>
+          </tr>
+          <tr>
+            <th><h3><b>1st</b></h3></th>
+            <th>
+              <img class="weapon-icon rarity-4" src="../weapons/Cinnabar_Spindle.png" alt=""><h3 class="weapon-name"><b>Cinnabar Spindle</b></h3>
+            </th>
+            <th class="no-align">
+              <h4><b>Base ATK</b>: 454</h4>
+              <h4><b>Bonus Stat</b>: DEF 69.0%</h4>
+              <h4><b>Skill Effect</b>: Elemental Skill DMG is increased by 40% of DEF. The effect will be triggered no more than once every 1.5s and will be cleared 0.1s after the Elemental Skill deals DMG.</h4>
+            </th>
+            <th>An event-exclusive 4-star sword that is Albedo's best weapon, since albedo is the only sword-user with an elemental skill that scales with DEF.</th>
+          </tr>
+          <tr>
+            <th><h3><b>2nd</b></h3></th>
+            <th>
+              <img class="weapon-icon rarity-3" src="../weapons/Harbinger_of_Dawn.png" alt=""><h3 class="weapon-name"><b>Harbinger of Dawn</b></h3>
+            </th>
+            <th class="no-align">
+              <h4><b>Base ATK</b>: 401</h4>
+              <h4><b>Bonus Stat</b>: CRIT DMG 46.9%</h4>
+              <h4><b>Skill Effect</b>: When HP is above 90%, increases CRIT Rate by 14%.</h4>
+            </th>
+            <th>An easily obtainable weapon and is his best F2P option. Having a team healer is definitely recommended to keep Albedo's HP above 90%.</th>
+          </tr>
+          <tr>
+            <th><h3><b>3rd</b></h3></th>
+            <th>
+              <img class="weapon-icon rarity-4" src="../weapons/Wolf-Fang.png" alt=""><h3 class="weapon-name"><b>Wolf-Fang</b></h3>
+            </th>
+            <th class="no-align">
+              <h4><b>Base ATK</b>: 510</h4>
+              <h4><b>Bonus Stat</b>: CRIT Rate 27.6%</h4>
+              <h4><b>Skill Effect</b>: DMG dealt by Elemental Skill and Elemental Burst is increased by 16%. When an Elemental Skill hits an opponent, its CRIT Rate will be increased by 2%. When an Elemental Burst hits an opponent, its CRIT Rate will be increased by 2%. Both of these effects last 10s separately, have 4 max stacks, and can be triggered once every 0.1s.</h4>
+            </th>
+            <th>Although slightly better than Harbinger of Dawn at R5 (which will cost you about $50), the difference is small. </th>
+          </tr>
+          <tr>
+            <th><h3><b>4th</b></h3></th>
+            <th>
+              <img class="weapon-icon rarity-5" src="../weapons/Primordial_Jade_Cutter.png" alt=""><h3 class="weapon-name"><b>Primordial Jade Cutter</b></h3>
+            </th>
+            <th class="no-align">
+              <h4><b>Base ATK</b>: 542</h4>
+              <h4><b>Bonus Stat</b>: CRIT Rate 44.1%</h4>
+              <h4><b>Skill Effect</b>: HP increased by 20%. Additionally, provides an ATK Bonus based on 1.2% of the wielder’s Max HP.</h4>
+            </th>
+          </tr>
+          <tr>
+            <th rowspan="2"><h3><b>5th</b></h3></th>
+            <th>
+              <img class="weapon-icon rarity-5" src="../weapons/Haran_Geppaku_Futsu.png" alt=""><h3 class="weapon-name"><b>Haran Geppaku Futsu</b></h3>
+            </th>
+            <th class="no-align">
+              <h4><b>Base ATK</b>: 608</h4>
+              <h4><b>Bonus Stat</b>: CRIT Rate 33.1%</h4>
+              <h4><b>Skill Effect</b>: Obtain 12% All Elemental DMG Bonus. When other nearby party members use Elemental Skills, the character equipping this weapon will gain 1 Wavespike stack. Max 2 stacks. This effect can be triggered once every 0.3s. When the character equipping this weapon uses an Elemental Skill, all stacks of Wavespike will be consumed to gain Rippling Upheaval: each stack of Wavespike consumed will increase Normal Attack DMG by 20% for 8s.</h4>
+            </th>
+            <th rowspan="2">A good alternative to Harbinger of Dawn without needing to stay above 90% HP, though not recommended to pull for them just for Albedo.</th>
+          </tr>
+          <tr>
+            <th>
+              <img class="weapon-icon rarity-5" src="../weapons/Light_of_Foliar_Incision.png" alt=""><h3 class="weapon-name"><b>Light of Foliar Incision</b></h3>
+            </th>
+            <th class="no-align">
+              <h4><b>Base ATK</b>: 542</h4>
+              <h4><b>Bonus Stat</b>: CRIT DMG 88.2%</h4>
+              <h4><b>Skill Effect</b>: CRIT Rate is increased by 4%. After Normal Attacks deal Elemental DMG, the Foliar Incision effect will be obtained, increasing DMG dealt by Normal Attacks and Elemental Skills by 120% of Elemental Mastery. This effect will disappear after 28 DMG instances or 12s. You can obtain Foliar Incision once every 12s.</h4>
+            </th>
+          </tr>
+          <!-- <tr>
+            <th><h3><b>6th</b></h3></th>
+            <th>
+              <img class="weapon-icon rarity-5" src="../weapons/Freedom-Sworn.png" alt=""><h3 class="weapon-name"><b>Freedom Sword</b></h3>
+            </th>
+            <th class="no-align">
+              <h4><b>Base ATK</b>: 608</h4>
+              <h4><b>Bonus Stat</b>: Elemental Mastery 198</h4>
+              <h4><b>Skill Effect</b>: Increases DMG by 10%. When characters with Freedom-Sworn trigger Elemental Reactions, they gain a Sigil of Rebellion (once every 0.5s). This triggers even if they aren't on the field. When you reach 2 Sigils, they will be consumed which grants nearby party members 20% ATK and 16% Normal, Charged, and Plunging Attack DMG for 12s. Once triggered, you gain no Sigils for 20s. The same buffs from the Millennial Movement series does not stack.</h4>
+            </th>
+          </tr> -->
+        </table>
+      </div>
+      <div id="artifacts-content" class="artifacts-content" style="display: flex;">
+        <div class="stats-recommendations">
+          <h1 class="artifact-title">Geo Sub DPS</h1>
+          <table class="artifacts-table">
+            <tr>
+              <th width=30% rowspan="3">Main Stats</th>
+              <th width=70%><img class="artifact-pieces" src="../icons/sands.png" alt="sands"><h4><b>Sands</b>:<br>DEF%</h4></th>
+            </tr>
+            <tr>
+              <th><nobr><img class="artifact-pieces" src="../icons/goblet.png" alt="goblet"><h4><b>Goblet</b>:<br>Geo DMG Bonus</h4></nobr></th>
+            </tr>
+            <tr>
+              <th><img class="artifact-pieces" src="../icons/circlet.png" alt="circlet"><h4><b>Circlet</b>:<br>CRIT Rate or CRIT DMG</h4></th>
+            </tr>
+            <tr>
+              <th>Substats</th>
+              <th colspan="2">DEF%, CRIT Rate, CRIT DMG</th>
+            </tr>
+          </table>
+        </div>
+        <div class="artifact-recommendations">
+          <h1 class="artifact-title" style="margin-left: 0;">Best Artifacts</h1>
+          <table class="artifacts-table" style="margin-left: 0; width: 90%;">
+            <tr>
+              <th rowspan="2">1st</th>
+              <th><img class="artifact-icon rarity-5" src="../artifacts/Bloom_Times.png" alt="Bloom_Times"><br>Husk of Opulent Dreams x4</th>
+              <th style="text-align: left; font-weight: normal;"><b>2-PC</b>: DEF +30%<br><b>4-PC</b>: A character equipped with this Artifact set will obtain the Curiosity effect in the following conditions: When on the field, the character gains 1 stack after hitting an opponent with a Geo attack, triggering a maximum of once every 0.3s. When off the field, the character gains 1 stack every 3s. Curiosity can stack up to 4 times, each providing 6% DEF and a 6% Geo DMG Bonus. When 6 seconds pass without gaining a Curiosity stack, 1 stack is lost.</th>
+              <th>Albedo will gain Curiosity when he casts his E (Transient Blossoms). Additionally this set buffs Albedo's DEF and Geo DMG, both stats that increase his Elemental Skill DMG.</th>
+            </tr>
+            <tr>
+              <!-- <th>2nd</th> -->
+              <th><img class="artifact-icon rarity-5" src="../artifacts/Golden_Songs_Variation.png" alt="Golden_Songs_Variation"><br>Golden Troupe x4</th>
+              <th style="text-align: left; font-weight: normal;"><b>2-PC</b>: Elemental Skill DMG +20%<br><b>4-PC</b>: Increases Elemental Skill DMG by 25%. Additionally when not on the field, Elemental Skill DMG will be further increased by 25%. This effect will be cleared 2s after taking the field.</th>
+              <th>The 4pc effect would give Albedo a 70% Skill DMG, and puts it on par with a 4pc Husk. </th>
+            </tr>
+            <tr>
+              <th rowspan="2">2nd</th>
+              <th rowspan="2"><img class="artifact-icon rarity-5" src="../artifacts/Bloom_Times.png" alt="Bloom_Times"><br>Husk of Opulent Dreams x2<img class="artifact-icon rarity-5" src="../artifacts/Golden_Songs_Variation.png" alt="Golden_Songs_Variation"><br>Golden Troupe x2</th>
+              <th style="text-align: left; font-weight: normal;"><b>2-PC</b>: DEF +30%</th>
+              <th rowspan="2">Although a 4pc Husk or Golden Troupe set is recommended, this is a good backup option if you don't have 4 good pieces to make a set.</th>
+            </tr>
+            <tr>
+              <th style="text-align: left; font-weight: normal;"><b>2-PC</b>: Elemental Skill DMG +20%</th>
+            </tr>
+            <!-- <tr>
+              <th>4-star</th>
+              <th><img class="artifact-icon rarity-4" src="../artifacts/Guardians_Flower.png" alt="Guardians_Flower"><br>Defender's Will x4</th>
+              <th style="text-align: left; font-weight: normal;"><b>2-PC</b>: DEF +30%<br><b>4-PC</b>: Increases Elemental RES by 30% for each element present among your characters in the party.</th>
+            </tr> -->
+          </table>
+        </div>
+      </div>
+      <div id="constellations-content" class="constellations-content">
+        <img src="../constellations/Cretaceus_Shape.png" class="constellation" alt="constellation">
+        <table class="artifacts-table constellations-table">
+          <tr>
+            <th></th>
+            <th>Rating</th>
+            <th>Constellation Effect / Merits</th>
+          </tr>
+          <tr>
+            <th>C1</th>
+            <th></th>
+            <th><b>Flower of Eden</b><br><h4>Transient Blossoms generated by Albedo's Abiogenesis: Solar Isotoma regenerate 1.2 Energy for Albedo.</h4></th>
+          </tr>
+          <tr>
+            <th>C2</th>
+            <th></th>
+            <th><b>Opening of Phanerozoic</b><br><h4>Transient Blossoms generated by Abiogenesis: Solar Isotoma grant Albedo Fatal Reckoning for 30s: Each stack of Fatal Reckoning increases DMG by 30% of Albedo's DEF. The effect stacks up to 4 times.<br>Unleashing Rite of Progeniture: Tectonic Tide consumes all stacks of Fatal Reckoning, increasing the DMG dealt by the Tectonic Tide and Fatal Blossoms based on the number of stacks consumed.</h4></th>
+          </tr>
+          <tr>
+            <th>C3</th>
+            <th></th>
+            <th><b>Grace of Helios</b><br><h4>Increase the Level of Abiogenesis: Solar Isotoma by 3. Maximum upgrade level is 15.</h4></th>
+          </tr>
+          <tr>
+            <th>C4</th>
+            <th></th>
+            <th><b>Descent of Divinity</b><br><h4>Solar Isotoma increases Plunging Attack DMG by 30% for active party members within the AoE.</h4></th>
+          </tr>
+          <tr>
+            <th>C5</th>
+            <th></th>
+            <th><b>Tide of Hadean</b><br><h4>Increases the Level of Rite of Progeniture: Tectonic Tide by 3. Maximum Upgrade level is 15.</h4></th>
+          </tr>
+          <tr>
+            <th>C6</th>
+            <th></th>
+            <th><b>Dust of Purification</b><br><h4>If active party members within the AoE are protected by a shield created by Crystallize, Solar Isotoma increases their DMG by 17%.</h4></th>
+          </tr>
+        </table>
+      </div>
+      <div id="talents-content" class="talents-content">
+        <div><h1 class="name">Talent Priority</h1></div>
+        <div class="row"><table class="talents-table">
+          <tr>
+            <td></td>
+            <td><b>Main DPS</b></td>
+          </tr>
+          <tr>
+            <td>1st</td>
+            <td>Elemental Skill</td>
+          </tr>
+          <tr>
+            <td>2nd</td>
+            <td>Elemental Burst</td>
+          </tr>
+          <tr>
+            <td>3rd</td>
+            <td>Normal Attack</td>
+          </tr>
+          <tr>
+            <td colspan="2"><h4>You should prioritize Albedo's elemental skill first as most of his DMG comes from that talent.</h4></td>
+          </tr>
+        </table>
+        <table class="talents-table">
+          <tr>
+            <td></td>
+            <td><b>Burst DPS</b></td>
+          </tr>
+          <tr>
+            <td>1st</td>
+            <td>Elemental Burst</td>
+          </tr>
+          <tr>
+            <td>2nd</td>
+            <td>Elemental Skill</td>
+          </tr>
+          <tr>
+            <td>3rd</td>
+            <td>Normal Attack</td>
+          </tr>
+          <tr>
+            <td colspan="2"><h4>If you are using him as a burst DPS, then his elemental burst should get priority.</h4></td>
+          </tr>
+        </table></div>
+      </div>
+      <div id="teams-content" class="teams-content">
+      <h1 class="name">Team Options</h1>
+      <table class="teams-table">
+        <tr>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Albedo_Icon.png" class="character-icon rarity-5" alt="Albedo"></div>
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Albedo</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Arataki_Itto_Icon.png" class="character-icon rarity-5" alt="Arataki_Itto"></div>
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Arataki Itto</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Gorou_Icon.png" class="character-icon rarity-4" alt="Gorou"></div>
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Gorou</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Zhongli_Icon.png" class="character-icon rarity-5" alt="Zhongli"></div>
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Zhongli</h2>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Albedo_Icon.png" class="character-icon rarity-5" alt="Albedo"></div>
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Albedo</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Arataki_Itto_Icon.png" class="character-icon rarity-5" alt="Arataki_Itto"></div>
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Arataki Itto</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Gorou_Icon.png" class="character-icon rarity-4" alt="Gorou"></div>
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Gorou</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Chiori_Icon.png" class="character-icon rarity-5" alt="Chiori"></div>
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Chiori</h2>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Albedo_Icon.png" class="character-icon rarity-5" alt="Albedo"></div>
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Albedo</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Noelle_Icon.png" class="character-icon rarity-4" alt="Noelle"></div>
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Noelle</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Gorou_Icon.png" class="character-icon rarity-4" alt="Gorou"></div>
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Gorou</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Yun_Jin_Icon.png" class="character-icon rarity-4" alt="Yun_Jin"></div>
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Yun Jin</h2>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Albedo_Icon.png" class="character-icon rarity-5" alt="Albedo"></div>
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Albedo</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Xiao_Icon.png" class="character-icon rarity-5" alt="Xiao"></div>
+              <img src="../element_types/anemo.png" class="element-type anemo" alt="anemo">
+              <h2 class="character-name">Xiao</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Faruzan_Icon.png" class="character-icon rarity-4" alt="Faruzan"></div>
+              <img src="../element_types/anemo.png" class="element-type anemo" alt="anemo">
+              <h2 class="character-name">Faruzan</h2>
+            </div>
+          </td>
+          <td>
+            <div class="character-portrait">
+              <div class="character-icon-wrapper"><img src="../character_icons/Zhongli_Icon.png" class="character-icon rarity-5" alt="Zhongli"></div>
+              <img src="../element_types/geo.png" class="element-type geo" alt="geo">
+              <h2 class="character-name">Zhongli</h2>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="starter-content" class="starter-content">
+      <div class="artifact-recommendations" style="margin-right: 0;">
+        <h1 class="artifact-title">Best Starter Artifacts</h1>
+        <table class="artifacts-table">
+          <tr>
+            <th><h1>Artifact</h1></th>
+            <th><h1>Artifact Information</h1></th>
+          </tr>
+          <tr>
+            <th><img class="artifact-icon rarity-4" src="../artifacts/Guardians_Flower.png" alt="Guardians_Flower"><br>Defender's Will x4</th>
+            <th style="text-align: left; font-weight: normal;"><b>2-PC</b>: DEF +30%<br><b>4-PC</b>: Increases Elemental RES by 30% for each element present among your characters in the party.</th>
+          </tr>
+          <tr>
+            <th rowspan="2"><img class="artifact-icon rarity-3" src="../artifacts/Lucky_Dog_Clover.png" alt="Lucky_Dog_Clover"><br>Lucky Dog x2<img class="artifact-icon rarity-3" src="../artifacts/Adventurer_Flower.png" alt="Adventurer_Flower"><br>Adventurer x2</th>
+            <th style="text-align: left; font-weight: normal;"><b>2-PC</b>: DEF increased by 100.</th>
+          </tr>
+          <tr>
+            <th style="text-align: left; font-weight: normal;"><b>2-PC</b>: Max HP increases by 1000.</th>
+          </tr>
+        </table>
+      </div>
+      <div id="weapons-content" class="weapons-content">
+        <h1 class="starter-artifact-title">Best Starter Weapons</h1>
+        <table class="starter-weapons-table">
+          <tr>
+            <th><h1>Weapon</h1></th>
+            <th><h1>Weapon Information</h1></th>
+          </tr>
+          <tr>
+            <th>
+              <img class="weapon-icon rarity-4" src="../weapons/Cinnabar_Spindle.png" alt=""><h3 class="weapon-name"><b>Cinnabar Spindle</b></h3>
+            </th>
+            <th class="no-align">
+              <h4><b>Base ATK</b>: 454</h4>
+              <h4><b>Bonus Stat</b>: DEF 69.0%</h4>
+              <h4><b>Skill Effect</b>: Elemental Skill DMG is increased by 40% of DEF. The effect will be triggered no more than once every 1.5s and will be cleared 0.1s after the Elemental Skill deals DMG.</h4>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <img class="weapon-icon rarity-3" src="../weapons/Harbinger_of_Dawn.png" alt=""><h3 class="weapon-name"><b>Harbinger of Dawn</b></h3>
+            </th>
+            <th class="no-align">
+              <h4><b>Base ATK</b>: 401</h4>
+              <h4><b>Bonus Stat</b>: CRIT DMG 46.9%</h4>
+              <h4><b>Skill Effect</b>: When HP is above 90%, increases CRIT Rate by 14%.</h4>
+            </th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
