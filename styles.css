@@ -98,12 +98,13 @@ nav li.active a {
 }
 
 .character-list {
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  border-radius: 4px;
-  justify-content: center;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 4px;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 *, :after, :before {
@@ -111,7 +112,7 @@ nav li.active a {
 }
 
 .character-portrait {
-  width: 13%;
+  width: 75%;
   position: relative;
   display: flex;
   flex-direction: column;
