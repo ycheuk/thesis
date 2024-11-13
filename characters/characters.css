@@ -1,4 +1,8 @@
 body {
+  background-image: url("../background/BG_geo.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
   margin: 0;
   padding-top: 70px;
   color: #bcc8cf;
