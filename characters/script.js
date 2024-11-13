@@ -89,3 +89,7 @@ function showContent(section) {
         contentContainer.innerHTML = sectionContent;
     }
 }
+
+function changeTheme(theme) {
+    document.getElementById("theme-stylesheet").setAttribute("href", theme);
+}

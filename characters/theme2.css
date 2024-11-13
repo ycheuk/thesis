@@ -1,0 +1,425 @@
+body {
+  background-image: url("../background/somethign.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding-top: 70px;
+  color: #bcc8cf;
+  font-family: 'Philosopher', sans-serif;
+  font-weight: normal;
+  text-shadow: 1px 1px 2px black;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #000000;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: fit-content;
+  top: 0;
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.header-exit {
+  margin-right: 10px;
+}
+
+.back-link {
+  width: 1px;
+  height: 1px;
+}
+
+.header-vision {
+  width: 80px;
+  height: 80px;
+}
+
+.header-title {
+  font-size: 24px;
+  color: #d2bc8e;
+  margin: 0;
+}
+
+.content {
+  margin-top: 50px;
+  display: flex;
+}
+
+.navigation {
+  padding: 0;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+.navigation li {
+    margin-left: 100px;
+    padding: 15px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #bcc8cf;
+    font-size: 24px;
+}
+
+.content-container {
+  flex: 1;
+  padding: 0;
+}
+
+.content-container h1 {
+  margin: 15px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .navigation li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .content-container {
+    padding: 10px;
+  }
+}
+
+.overview-content {
+  position: absolute;
+  padding: 15px;
+  width: 75%;
+  right: 0;
+}
+
+.overview-content h4 {
+  margin: 5px;
+  margin-left: 0;
+}
+
+.overview-content h1 {
+  margin: 5px;
+  margin-left: 0;
+}
+
+.character_wish {
+  width: 60%;
+  padding: 0 30px 0 30px;
+}
+
+.name, .voice, .overview-description, .description  {
+  color: #bcc8cf;
+}
+
+.name {
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.voice {
+  margin-bottom: 5px;
+}
+
+.voice {
+  font-size: 20px;
+}
+
+.overview-description, .description {
+  font-size: 18px;
+}
+
+.separator {
+  height: 1px;
+  width: 100%;
+  border: none;
+  background-color: #bcc8cf;
+  margin: 5px 0 20px;
+}
+
+.info-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.right-align {
+  text-align: right;
+  margin: 0;
+}
+
+.left-align {
+  text-align: right;
+  margin: 0;
+}
+
+.weapons-table {
+  margin-left: 50px;
+  border-collapse: collapse;
+  width: 90%;
+  margin-bottom: 50px;
+}
+
+.weapons-table th, .weapons-table tr {
+  border: .5px solid #bcc8cf;
+}
+
+
+.weapons-table td, .weapons-table th {
+  padding: 10px;
+}
+
+.weapons-content th {
+  font-weight: normal;
+}
+
+.weapon-icon {
+  width: 80px;
+  border-radius: 5px;
+}
+
+.weapon-name {
+  margin: 5px;
+}
+
+.rarity-5 {
+  background-image: url(../background/BG_Item_5_Star.png);
+  background-size: cover;
+}
+
+.rarity-4 {
+  background-image: url(../background/BG_Item_4_Star.png);
+  background-size: cover;
+}
+
+.rarity-3 {
+  background-image: url(../background/BG_Item_3_Star.png);
+  background-size: cover;
+}
+
+h3, h4 {
+  font-weight: normal;
+}
+
+h4 {
+  margin: 5px;
+}
+
+.no-align {
+  text-align: left;
+}
+
+.artifacts-table {
+  /* margin-right: 100px; */
+  margin-left: 50px;
+  border-collapse: collapse;
+  width: 70%;
+  margin-bottom: 50px;
+
+}
+
+.artifacts-table th, .artifacts-table tr {
+  border: .5px solid #bcc8cf;
+}
+
+.artifacts-table td, .artifacts-table th {
+  padding: 10px;
+}
+
+.artifact-pieces {
+  width: 30px;
+}
+
+.artifact-title {
+  margin-left: 50px;
+}
+
+.artifacts-content {
+  display: flex;
+}
+
+.artifact-recommendations {
+  padding-left: 20px;
+}
+
+.artifact-recommendations th {
+  font-weight: normal;
+}
+
+.stats-recommendations,
+.artifact-recommendations {
+  /* flex: 1; */
+  /* margin-right: 20px; */
+}
+
+.artifact-icon {
+  width: 80px;
+  border-radius: 5px;
+}
+
+.constellation {
+  filter: brightness(80%);
+  max-width: 100%;
+  width: 45%;
+  height: fit-content;
+}
+
+.constellations-table {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-collapse: collapse;
+  width: 55%;
+  margin-bottom: 10px;
+}
+
+.talents-content {
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding: 15px;
+}
+
+.talents-table {
+  border-collapse: collapse;
+  width: 30%;
+  margin: 30px;
+}
+
+.talents-table th, .talents-table td {
+  border: .5px solid #bcc8cf;
+  padding: 8px;
+}
+
+.talents-table tr:last-child td {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.teams-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+}
+
+.teams-table td, .teams-table th {
+  padding: 0;
+}
+
+.teams-table {
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+
+.character-portrait {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7px;
+}
+
+.character-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px 5px 20px 0;
+  background-color: #e9e5db;
+}
+
+.element-type {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+}
+
+.geo {
+  filter: drop-shadow(0 0 0.2rem yellow);
+}
+
+.anemo {
+  filter: drop-shadow(0 0 0.2rem aqua);
+}
+
+.character-name {
+  width: 100px;
+  font-style: 'Philosopher', Arial;
+  font-size: 14px;
+  color: #4c5569;
+  font-weight: bold;
+  margin: 0px auto auto auto;
+  text-align: center;
+  background-color: #e9e5db;
+  border-radius: 0 0 5px 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-shadow: none;
+}
+
+.character-icon-wrapper {
+  width: 100px;
+  height: 100px;
+  background-color: #e9e5db;
+  border-radius: 5px 5px 0 0;
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.teams-table td {
+  padding-bottom: 10px;
+}
+
+.starter-artifact-title {
+  margin-left: 10px;
+}
+
+.starter-weapons-table {
+  margin-left: 10px;
+  border-collapse: collapse;
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.starter-weapons-table th, .starter-weapons-table tr {
+  border: .5px solid #bcc8cf;
+}
+
+
+.starter-weapons-table td, .starter-weapons-table th {
+  padding: 10px;
+}
