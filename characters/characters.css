@@ -102,19 +102,19 @@ header {
   }
 }
 
-.profile-content {
+.overview-content {
   position: absolute;
   padding: 15px;
   width: 75%;
   right: 0;
 }
 
-.profile-content h4 {
+.overview-content h4 {
   margin: 5px;
   margin-left: 0;
 }
 
-.profile-content h1 {
+.overview-content h1 {
   margin: 5px;
   margin-left: 0;
 }
@@ -124,7 +124,7 @@ header {
   padding: 0 30px 0 30px;
 }
 
-.name, .voice, .profile-description, .description  {
+.name, .voice, .overview-description, .description  {
   color: #bcc8cf;
 }
 
@@ -142,7 +142,7 @@ header {
   font-size: 20px;
 }
 
-.profile-description, .description {
+.overview-description, .description {
   font-size: 18px;
 }
 

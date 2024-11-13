@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    showContent('profile');
+    showContent('overview');
 });
 
 function showContent(section) {
     const contentContainer = document.getElementById('contentContainer');
-    const profileContent = document.getElementById('profile-content');
+    const overviewContent = document.getElementById('overview-content');
     const weaponsContent = document.getElementById('weapons-content');
     const artifactsContent = document.getElementById('artifacts-content');
     const constellationsContent = document.getElementById('constellations-content');
@@ -12,8 +12,8 @@ function showContent(section) {
     const teamsContent = document.getElementById('teams-content');
     const starterContent = document.getElementById('starter-content');
 
-    if (section === 'profile') {
-        profileContent.style.display = 'flex';
+    if (section === 'overview') {
+        overviewContent.style.display = 'flex';
         weaponsContent.style.display = 'none';
         artifactsContent.style.display = 'none';
         constellationsContent.style.display = 'none';
@@ -21,7 +21,7 @@ function showContent(section) {
         teamsContent.style.display = 'none';
         starterContent.style.display = 'none';
     } else if (section === 'weapons') {
-        profileContent.style.display = 'none';
+        overviewContent.style.display = 'none';
         weaponsContent.style.display = 'block';
         artifactsContent.style.display = 'none';
         constellationsContent.style.display = 'none';
@@ -29,7 +29,7 @@ function showContent(section) {
         teamsContent.style.display = 'none';
         starterContent.style.display = 'none';
     } else if (section === 'artifacts') {
-        profileContent.style.display = 'none';
+        overviewContent.style.display = 'none';
         weaponsContent.style.display = 'none';
         artifactsContent.style.display = 'flex';
         constellationsContent.style.display = 'none';
@@ -37,7 +37,7 @@ function showContent(section) {
         teamsContent.style.display = 'none';
         starterContent.style.display = 'none';
     } else if (section === 'constellations') {
-        profileContent.style.display = 'none';
+        overviewContent.style.display = 'none';
         weaponsContent.style.display = 'none';
         artifactsContent.style.display = 'none';
         constellationsContent.style.display = 'flex';
@@ -45,7 +45,7 @@ function showContent(section) {
         teamsContent.style.display = 'none';
         starterContent.style.display = 'none';
     } else if (section === 'teams') {
-        profileContent.style.display = 'none';
+        overviewContent.style.display = 'none';
         weaponsContent.style.display = 'none';
         artifactsContent.style.display = 'none';
         constellationsContent.style.display = 'none';
@@ -53,7 +53,7 @@ function showContent(section) {
         teamsContent.style.display = 'flex';
         starterContent.style.display = 'none';
     } else if (section === 'talents') {
-        profileContent.style.display = 'none';
+        overviewContent.style.display = 'none';
         weaponsContent.style.display = 'none';
         artifactsContent.style.display = 'none';
         constellationsContent.style.display = 'none';
@@ -62,7 +62,7 @@ function showContent(section) {
         teamsContent.style.display = 'none';
         starterContent.style.display = 'none';
     } else if (section === 'starter') {
-        profileContent.style.display = 'none';
+        overviewContent.style.display = 'none';
         weaponsContent.style.display = 'none';
         artifactsContent.style.display = 'none';
         constellationsContent.style.display = 'none';
@@ -71,7 +71,7 @@ function showContent(section) {
         teamsContent.style.display = 'none';
         starterContent.style.display = 'flex';
     } else {
-        profileContent.style.display = 'none';
+        overviewContent.style.display = 'none';
         weaponsContent.style.display = 'none';
         artifactsContent.style.display = 'none';
         constellationsContent.style.display = 'none';
