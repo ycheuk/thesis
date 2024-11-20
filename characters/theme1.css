@@ -1,5 +1,5 @@
 body {
-  background-image: url("../background/BG_geo.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../background/scroll-3.jpeg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
