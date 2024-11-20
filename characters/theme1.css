@@ -239,21 +239,21 @@ h4 {
   margin-left: 25px;
 }
 
-.gingerbread-table {
-  /* margin-right: 100px; */
-  margin-left: 50px;
-  border-collapse: collapse;
-  width: 70%;
-  margin-bottom: 50px;
-
+#gingerbread-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
 }
 
-.gingerbread-table th, .gingerbread-table tr {
-  border: .5px solid #bcc8cf;
-}
-
-.gingerbread-table td, .gingerbread-table th {
-  padding: 10px;
+.text-with-background {
+  background-image: url('../icons/traditional-book.png');
+  background-size: cover;
+  background-size: 100%;
+  background-position: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .artifact-pieces {
@@ -262,10 +262,6 @@ h4 {
 
 .artifact-title {
   margin-left: 50px;
-}
-
-.gingerbread-content {
-  display: flex;
 }
 
 .artifact-recommendations {
