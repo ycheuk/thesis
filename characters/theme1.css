@@ -243,8 +243,6 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
-  width: 100%;
 }
 
 .text-with-background {
@@ -254,6 +252,8 @@ h4 {
   background-position: center;
   text-align: center;
   padding: 20px;
+  height: 300px;
+  width: 300px;
 }
 
 .artifact-pieces {
