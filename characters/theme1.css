@@ -82,6 +82,11 @@ header {
     font-size: 24px;
 }
 
+.navigation li:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* You can adjust the shadow values */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
 .content-container {
   flex: 1;
   padding: 0;
@@ -174,23 +179,23 @@ header {
   margin: 0;
 }
 
-.weapons-table {
+.interviews-table {
   margin-left: 50px;
   border-collapse: collapse;
   width: 90%;
   margin-bottom: 50px;
 }
 
-.weapons-table th, .weapons-table tr {
+.interviews-table th, .interviews-table tr {
   border: .5px solid #bcc8cf;
 }
 
 
-.weapons-table td, .weapons-table th {
+.interviews-table td, .interviews-table th {
   padding: 10px;
 }
 
-.weapons-content th {
+.interviews-content th {
   font-weight: normal;
 }
 
@@ -230,7 +235,11 @@ h4 {
   text-align: left;
 }
 
-.artifacts-table {
+.gingerbread, .subjectc {
+  margin-left: 25px;
+}
+
+.gingerbread-table {
   /* margin-right: 100px; */
   margin-left: 50px;
   border-collapse: collapse;
@@ -239,11 +248,11 @@ h4 {
 
 }
 
-.artifacts-table th, .artifacts-table tr {
+.gingerbread-table th, .gingerbread-table tr {
   border: .5px solid #bcc8cf;
 }
 
-.artifacts-table td, .artifacts-table th {
+.gingerbread-table td, .gingerbread-table th {
   padding: 10px;
 }
 
@@ -255,7 +264,7 @@ h4 {
   margin-left: 50px;
 }
 
-.artifacts-content {
+.gingerbread-content {
   display: flex;
 }
 
@@ -285,7 +294,7 @@ h4 {
   height: fit-content;
 }
 
-.constellations-table {
+.subjectc-table {
   margin-left: 10px;
   margin-right: 10px;
   border-collapse: collapse;
@@ -408,18 +417,18 @@ h4 {
   margin-left: 10px;
 }
 
-.starter-weapons-table {
+.starter-interviews-table {
   margin-left: 10px;
   border-collapse: collapse;
   width: 80%;
   margin-bottom: 50px;
 }
 
-.starter-weapons-table th, .starter-weapons-table tr {
+.starter-interviews-table th, .starter-interviews-table tr {
   border: .5px solid #bcc8cf;
 }
 
 
-.starter-weapons-table td, .starter-weapons-table th {
+.starter-interviews-table td, .starter-interviews-table th {
   padding: 10px;
 }

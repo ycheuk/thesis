@@ -33,19 +33,21 @@
       <nav class="navigation">
           <ul>
               <li><a href="#overview" onclick="showContent('overview')">Overview</a></li>
-              <li><a href="#weapons" onclick="showContent('weapons')">Weapons</a></li>
-              <li><a href="#artifacts" onclick="showContent('artifacts')">Artifacts</a></li>
-              <li><a href="#constellations" onclick="showContent('constellations')">Constellations</a></li>
-              <li><a href="#talents" onclick="showContent('talents')">Talents</a></li>
-              <li><a href="#teams" onclick="showContent('teams')">Teams</a></li>
-              <li><a href="#starter-build" onclick="showContent('starter')">Starter Build</a></li>
+              <li style="font-size: 24px;">Interviews</li>
+              <ul>
+                  <li><a class="gingerbread" href="#gingerbread" onclick="showContent('gingerbread')">'Gingerbread'</a></li>
+                  <li><a class="subjectc" href="#subjectc" onclick="showContent('subjectc')">'Subject C'</a></li>
+              </ul>
+              <!-- <li><a href="#talents" onclick="showContent('talents')">Talents</a></li>
+              <li><a href="#teams" onclick="showContent('teams')">Teams</a></li> -->
+              <li><a href="#starter-build" onclick="showContent('starter')">Genshin Impact</a></li>
           </ul>
       </nav>
       <div id="overview-content" class="overview-content">
-        
+
       </div>
-      <div id="weapons-content" class="weapons-content">
-        <table class="weapons-table">
+      <div id="interviews-content" class="interviews-content">
+        <table class="interviews-table">
           <tr>
             <th width=12%></th>
             <th width=18%><h1>Weapon</h1></th>
@@ -55,7 +57,7 @@
           <tr>
             <th><h3><b>1st</b></h3></th>
             <th>
-              <img class="weapon-icon rarity-4" src="../weapons/Cinnabar_Spindle.png" alt=""><h3 class="weapon-name"><b>Cinnabar Spindle</b></h3>
+              <img class="weapon-icon rarity-4" src="../interviews/Cinnabar_Spindle.png" alt=""><h3 class="weapon-name"><b>Cinnabar Spindle</b></h3>
             </th>
             <th class="no-align">
               <h4><b>Base ATK</b>: 454</h4>
@@ -67,7 +69,7 @@
           <tr>
             <th><h3><b>2nd</b></h3></th>
             <th>
-              <img class="weapon-icon rarity-3" src="../weapons/Harbinger_of_Dawn.png" alt=""><h3 class="weapon-name"><b>Harbinger of Dawn</b></h3>
+              <img class="weapon-icon rarity-3" src="../interviews/Harbinger_of_Dawn.png" alt=""><h3 class="weapon-name"><b>Harbinger of Dawn</b></h3>
             </th>
             <th class="no-align">
               <h4><b>Base ATK</b>: 401</h4>
@@ -79,7 +81,7 @@
           <tr>
             <th><h3><b>3rd</b></h3></th>
             <th>
-              <img class="weapon-icon rarity-4" src="../weapons/Wolf-Fang.png" alt=""><h3 class="weapon-name"><b>Wolf-Fang</b></h3>
+              <img class="weapon-icon rarity-4" src="../interviews/Wolf-Fang.png" alt=""><h3 class="weapon-name"><b>Wolf-Fang</b></h3>
             </th>
             <th class="no-align">
               <h4><b>Base ATK</b>: 510</h4>
@@ -91,7 +93,7 @@
           <tr>
             <th><h3><b>4th</b></h3></th>
             <th>
-              <img class="weapon-icon rarity-5" src="../weapons/Primordial_Jade_Cutter.png" alt=""><h3 class="weapon-name"><b>Primordial Jade Cutter</b></h3>
+              <img class="weapon-icon rarity-5" src="../interviews/Primordial_Jade_Cutter.png" alt=""><h3 class="weapon-name"><b>Primordial Jade Cutter</b></h3>
             </th>
             <th class="no-align">
               <h4><b>Base ATK</b>: 542</h4>
@@ -102,7 +104,7 @@
           <tr>
             <th rowspan="2"><h3><b>5th</b></h3></th>
             <th>
-              <img class="weapon-icon rarity-5" src="../weapons/Haran_Geppaku_Futsu.png" alt=""><h3 class="weapon-name"><b>Haran Geppaku Futsu</b></h3>
+              <img class="weapon-icon rarity-5" src="../interviews/Haran_Geppaku_Futsu.png" alt=""><h3 class="weapon-name"><b>Haran Geppaku Futsu</b></h3>
             </th>
             <th class="no-align">
               <h4><b>Base ATK</b>: 608</h4>
@@ -113,7 +115,7 @@
           </tr>
           <tr>
             <th>
-              <img class="weapon-icon rarity-5" src="../weapons/Light_of_Foliar_Incision.png" alt=""><h3 class="weapon-name"><b>Light of Foliar Incision</b></h3>
+              <img class="weapon-icon rarity-5" src="../interviews/Light_of_Foliar_Incision.png" alt=""><h3 class="weapon-name"><b>Light of Foliar Incision</b></h3>
             </th>
             <th class="no-align">
               <h4><b>Base ATK</b>: 542</h4>
@@ -124,7 +126,7 @@
           <!-- <tr>
             <th><h3><b>6th</b></h3></th>
             <th>
-              <img class="weapon-icon rarity-5" src="../weapons/Freedom-Sworn.png" alt=""><h3 class="weapon-name"><b>Freedom Sword</b></h3>
+              <img class="weapon-icon rarity-5" src="../interviews/Freedom-Sworn.png" alt=""><h3 class="weapon-name"><b>Freedom Sword</b></h3>
             </th>
             <th class="no-align">
               <h4><b>Base ATK</b>: 608</h4>
@@ -134,10 +136,10 @@
           </tr> -->
         </table>
       </div>
-      <div id="artifacts-content" class="artifacts-content" style="display: flex;">
+      <div id="gingerbread-content" class="gingerbread-content" style="display: flex;">
         <div class="stats-recommendations">
           <h1 class="artifact-title">Geo Sub DPS</h1>
-          <table class="artifacts-table">
+          <table class="gingerbread-table">
             <tr>
               <th width=30% rowspan="3">Main Stats</th>
               <th width=70%><img class="artifact-pieces" src="../icons/sands.png" alt="sands"><h4><b>Sands</b>:<br>DEF%</h4></th>
@@ -155,23 +157,23 @@
           </table>
         </div>
         <div class="artifact-recommendations">
-          <h1 class="artifact-title" style="margin-left: 0;">Best Artifacts</h1>
-          <table class="artifacts-table" style="margin-left: 0; width: 90%;">
+          <h1 class="artifact-title" style="margin-left: 0;">Best gingerbread</h1>
+          <table class="gingerbread-table" style="margin-left: 0; width: 90%;">
             <tr>
               <th rowspan="2">1st</th>
-              <th><img class="artifact-icon rarity-5" src="../artifacts/Bloom_Times.png" alt="Bloom_Times"><br>Husk of Opulent Dreams x4</th>
+              <th><img class="artifact-icon rarity-5" src="../gingerbread/Bloom_Times.png" alt="Bloom_Times"><br>Husk of Opulent Dreams x4</th>
               <th style="text-align: left; font-weight: normal;"><b>2-PC</b>: DEF +30%<br><b>4-PC</b>: A character equipped with this Artifact set will obtain the Curiosity effect in the following conditions: When on the field, the character gains 1 stack after hitting an opponent with a Geo attack, triggering a maximum of once every 0.3s. When off the field, the character gains 1 stack every 3s. Curiosity can stack up to 4 times, each providing 6% DEF and a 6% Geo DMG Bonus. When 6 seconds pass without gaining a Curiosity stack, 1 stack is lost.</th>
               <th>Albedo will gain Curiosity when he casts his E (Transient Blossoms). Additionally this set buffs Albedo's DEF and Geo DMG, both stats that increase his Elemental Skill DMG.</th>
             </tr>
             <tr>
               <!-- <th>2nd</th> -->
-              <th><img class="artifact-icon rarity-5" src="../artifacts/Golden_Songs_Variation.png" alt="Golden_Songs_Variation"><br>Golden Troupe x4</th>
+              <th><img class="artifact-icon rarity-5" src="../gingerbread/Golden_Songs_Variation.png" alt="Golden_Songs_Variation"><br>Golden Troupe x4</th>
               <th style="text-align: left; font-weight: normal;"><b>2-PC</b>: Elemental Skill DMG +20%<br><b>4-PC</b>: Increases Elemental Skill DMG by 25%. Additionally when not on the field, Elemental Skill DMG will be further increased by 25%. This effect will be cleared 2s after taking the field.</th>
               <th>The 4pc effect would give Albedo a 70% Skill DMG, and puts it on par with a 4pc Husk. </th>
             </tr>
             <tr>
               <th rowspan="2">2nd</th>
-              <th rowspan="2"><img class="artifact-icon rarity-5" src="../artifacts/Bloom_Times.png" alt="Bloom_Times"><br>Husk of Opulent Dreams x2<img class="artifact-icon rarity-5" src="../artifacts/Golden_Songs_Variation.png" alt="Golden_Songs_Variation"><br>Golden Troupe x2</th>
+              <th rowspan="2"><img class="artifact-icon rarity-5" src="../gingerbread/Bloom_Times.png" alt="Bloom_Times"><br>Husk of Opulent Dreams x2<img class="artifact-icon rarity-5" src="../gingerbread/Golden_Songs_Variation.png" alt="Golden_Songs_Variation"><br>Golden Troupe x2</th>
               <th style="text-align: left; font-weight: normal;"><b>2-PC</b>: DEF +30%</th>
               <th rowspan="2">Although a 4pc Husk or Golden Troupe set is recommended, this is a good backup option if you don't have 4 good pieces to make a set.</th>
             </tr>
@@ -180,15 +182,15 @@
             </tr>
             <!-- <tr>
               <th>4-star</th>
-              <th><img class="artifact-icon rarity-4" src="../artifacts/Guardians_Flower.png" alt="Guardians_Flower"><br>Defender's Will x4</th>
+              <th><img class="artifact-icon rarity-4" src="../gingerbread/Guardians_Flower.png" alt="Guardians_Flower"><br>Defender's Will x4</th>
               <th style="text-align: left; font-weight: normal;"><b>2-PC</b>: DEF +30%<br><b>4-PC</b>: Increases Elemental RES by 30% for each element present among your characters in the party.</th>
             </tr> -->
           </table>
         </div>
       </div>
-      <div id="constellations-content" class="constellations-content">
-        <img src="../constellations/Cretaceus_Shape.png" class="constellation" alt="constellation">
-        <table class="artifacts-table constellations-table">
+      <div id="subjectc-content" class="subjectc-content">
+        <img src="../subjectc/Cretaceus_Shape.png" class="constellation" alt="constellation">
+        <table class="gingerbread-table subjectc-table">
           <tr>
             <th></th>
             <th>Rating</th>
@@ -398,18 +400,18 @@
     </div>
     <div id="starter-content" class="starter-content">
       <div class="artifact-recommendations" style="margin-right: 0;">
-        <h1 class="artifact-title">Best Starter Artifacts</h1>
-        <table class="artifacts-table">
+        <h1 class="artifact-title">Best Starter gingerbread</h1>
+        <table class="gingerbread-table">
           <tr>
             <th><h1>Artifact</h1></th>
             <th><h1>Artifact Information</h1></th>
           </tr>
           <tr>
-            <th><img class="artifact-icon rarity-4" src="../artifacts/Guardians_Flower.png" alt="Guardians_Flower"><br>Defender's Will x4</th>
+            <th><img class="artifact-icon rarity-4" src="../gingerbread/Guardians_Flower.png" alt="Guardians_Flower"><br>Defender's Will x4</th>
             <th style="text-align: left; font-weight: normal;"><b>2-PC</b>: DEF +30%<br><b>4-PC</b>: Increases Elemental RES by 30% for each element present among your characters in the party.</th>
           </tr>
           <tr>
-            <th rowspan="2"><img class="artifact-icon rarity-3" src="../artifacts/Lucky_Dog_Clover.png" alt="Lucky_Dog_Clover"><br>Lucky Dog x2<img class="artifact-icon rarity-3" src="../artifacts/Adventurer_Flower.png" alt="Adventurer_Flower"><br>Adventurer x2</th>
+            <th rowspan="2"><img class="artifact-icon rarity-3" src="../gingerbread/Lucky_Dog_Clover.png" alt="Lucky_Dog_Clover"><br>Lucky Dog x2<img class="artifact-icon rarity-3" src="../gingerbread/Adventurer_Flower.png" alt="Adventurer_Flower"><br>Adventurer x2</th>
             <th style="text-align: left; font-weight: normal;"><b>2-PC</b>: DEF increased by 100.</th>
           </tr>
           <tr>
@@ -417,16 +419,16 @@
           </tr>
         </table>
       </div>
-      <div id="weapons-content" class="weapons-content">
-        <h1 class="starter-artifact-title">Best Starter Weapons</h1>
-        <table class="starter-weapons-table">
+      <div id="interviews-content" class="interviews-content">
+        <h1 class="starter-artifact-title">Best Starter interviews</h1>
+        <table class="starter-interviews-table">
           <tr>
             <th><h1>Weapon</h1></th>
             <th><h1>Weapon Information</h1></th>
           </tr>
           <tr>
             <th>
-              <img class="weapon-icon rarity-4" src="../weapons/Cinnabar_Spindle.png" alt=""><h3 class="weapon-name"><b>Cinnabar Spindle</b></h3>
+              <img class="weapon-icon rarity-4" src="../interviews/Cinnabar_Spindle.png" alt=""><h3 class="weapon-name"><b>Cinnabar Spindle</b></h3>
             </th>
             <th class="no-align">
               <h4><b>Base ATK</b>: 454</h4>
@@ -436,7 +438,7 @@
           </tr>
           <tr>
             <th>
-              <img class="weapon-icon rarity-3" src="../weapons/Harbinger_of_Dawn.png" alt=""><h3 class="weapon-name"><b>Harbinger of Dawn</b></h3>
+              <img class="weapon-icon rarity-3" src="../interviews/Harbinger_of_Dawn.png" alt=""><h3 class="weapon-name"><b>Harbinger of Dawn</b></h3>
             </th>
             <th class="no-align">
               <h4><b>Base ATK</b>: 401</h4>
