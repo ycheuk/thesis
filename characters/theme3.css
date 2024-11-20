@@ -1,5 +1,6 @@
 body {
-  background-image: url("../background/BG_geo.png");
+  /* background-image: black; until i find an image*/
+  background-color: black;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
