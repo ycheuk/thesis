@@ -248,12 +248,30 @@ h4 {
 .text-with-background {
   background-image: url('../icons/traditional-book.png');
   background-size: cover;
-  background-size: 100%;
   background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 20px;
   height: 300px;
   width: 300px;
+  padding: 0;
+  margin: 0;
+  padding-right: 20px;
+  color: black;
+  text-shadow: none;
+}
+
+.person::after {
+  content: '';
+  background-image: url('../icons/person.png'); /* Path to your person.png */
+  background-size: cover;
+  background-position: center;
+  position: absolute; /* Allows placement relative to the parent */
+  width: 100px; /* Set the desired size */
+  height: 100px;
+  top: 0; /* Adjust positioning */
+  right: -120px; /* Adjust positioning */
 }
 
 .artifact-pieces {
