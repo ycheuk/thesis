@@ -260,19 +260,21 @@ h4 {
   padding-right: 20px;
   color: black;
   text-shadow: none;
-}
+  position: relative; /* Allows positioning of pseudo-elements */
+  }
 
-.person::after {
-  content: '';
-  background-image: url('../icons/person.png'); /* Path to your person.png */
-  background-size: cover;
-  background-position: center;
-  position: absolute; /* Allows placement relative to the parent */
-  width: 100px; /* Set the desired size */
-  height: 100px;
-  top: 0; /* Adjust positioning */
-  right: -120px; /* Adjust positioning */
-}
+  .text-with-background::before {
+    content: '';
+    background-image: url('../icons/person.png');
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 85%;
+    transform: translateY(-50%);
+  }
 
 .artifact-pieces {
   width: 30px;
