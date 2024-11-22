@@ -83,8 +83,8 @@ header {
 }
 
 .navigation li:hover {
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* You can adjust the shadow values */
-    transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .content-container {
@@ -260,7 +260,7 @@ h4 {
   padding-right: 20px;
   color: black;
   text-shadow: none;
-  position: relative; /* Allows positioning of pseudo-elements */
+  position: relative; 
   }
 
   .text-with-background::before {
@@ -318,7 +318,7 @@ h4 {
   margin-bottom: 10px;
 }
 
-.talents-content {
+.genshin-content {
   width: 100%;
   flex-direction: column;
   justify-content: space-between;
@@ -328,18 +328,18 @@ h4 {
   padding: 15px;
 }
 
-.talents-table {
+.genshin-table {
   border-collapse: collapse;
   width: 30%;
   margin: 30px;
 }
 
-.talents-table th, .talents-table td {
+.genshin-table th, .genshin-table td {
   border: .5px solid #bcc8cf;
   padding: 8px;
 }
 
-.talents-table tr:last-child td {
+.genshin-table tr:last-child td {
   border-left: none;
   border-right: none;
   border-bottom: none;
@@ -429,22 +429,22 @@ h4 {
   padding-bottom: 10px;
 }
 
-.starter-artifact-title {
+.conclusion-artifact-title {
   margin-left: 10px;
 }
 
-.starter-interviews-table {
+.conclusion-interviews-table {
   margin-left: 10px;
   border-collapse: collapse;
   width: 80%;
   margin-bottom: 50px;
 }
 
-.starter-interviews-table th, .starter-interviews-table tr {
+.conclusion-interviews-table th, .conclusion-interviews-table tr {
   border: .5px solid #bcc8cf;
 }
 
 
-.starter-interviews-table td, .starter-interviews-table th {
+.conclusion-interviews-table td, .conclusion-interviews-table th {
   padding: 10px;
 }

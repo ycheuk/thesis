@@ -294,7 +294,7 @@ h4 {
   margin-bottom: 10px;
 }
 
-.talents-content {
+.genshin-content {
   width: 100%;
   flex-direction: column;
   justify-content: space-between;
@@ -304,18 +304,18 @@ h4 {
   padding: 15px;
 }
 
-.talents-table {
+.genshin-table {
   border-collapse: collapse;
   width: 30%;
   margin: 30px;
 }
 
-.talents-table th, .talents-table td {
+.genshin-table th, .genshin-table td {
   border: .5px solid #bcc8cf;
   padding: 8px;
 }
 
-.talents-table tr:last-child td {
+.genshin-table tr:last-child td {
   border-left: none;
   border-right: none;
   border-bottom: none;
@@ -405,22 +405,22 @@ h4 {
   padding-bottom: 10px;
 }
 
-.starter-artifact-title {
+.conclusion-artifact-title {
   margin-left: 10px;
 }
 
-.starter-interviews-table {
+.conclusion-interviews-table {
   margin-left: 10px;
   border-collapse: collapse;
   width: 80%;
   margin-bottom: 50px;
 }
 
-.starter-interviews-table th, .starter-interviews-table tr {
+.conclusion-interviews-table th, .conclusion-interviews-table tr {
   border: .5px solid #bcc8cf;
 }
 
 
-.starter-interviews-table td, .starter-interviews-table th {
+.conclusion-interviews-table td, .conclusion-interviews-table th {
   padding: 10px;
 }
