@@ -5,10 +5,10 @@ body {
   background-size: cover;
   margin: 0;
   padding-top: 70px;
-  color: #bcc8cf;
+  color: #92605B;
   font-family: 'Philosopher', sans-serif;
   font-weight: normal;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 1px black;
 }
 
 header {
@@ -78,13 +78,13 @@ header {
 
 .navigation a {
     text-decoration: none;
-    color: #bcc8cf;
+    color: #92605B;
     font-size: 24px;
 }
 
 .navigation li:hover {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease-in-out; 
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .content-container {
