@@ -456,3 +456,7 @@ h4 {
 .conclusion-interviews-table td, .conclusion-interviews-table th {
   padding: 10px;
 }
+
+p {
+  text-shadow: none;
+}
