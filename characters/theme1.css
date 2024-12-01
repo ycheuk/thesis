@@ -254,7 +254,7 @@ h4 {
 #gingerbread-content {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .text-with-background {
@@ -455,7 +455,6 @@ h4 {
 .conclusion-interviews-table th, .conclusion-interviews-table tr {
   border: .5px solid #bcc8cf;
 }
-
 
 .conclusion-interviews-table td, .conclusion-interviews-table th {
   padding: 10px;
