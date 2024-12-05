@@ -8,6 +8,8 @@ function showContent(section) {
     const interviewsContent = document.getElementById('interviews-content');
     const gingerbreadContent = document.getElementById('gingerbread-content');
     const subjectcContent = document.getElementById('subjectc-content');
+    const feeContent = document.getElementById('fee-content');
+    const rexContent = document.getElementById('rex-content');
     const genshinContent = document.getElementById('genshin-content');
     const teamsContent = document.getElementById('teams-content');
     const conclusionContent = document.getElementById('conclusion-content');
@@ -17,6 +19,8 @@ function showContent(section) {
         interviewsContent.style.display = 'none';
         gingerbreadContent.style.display = 'none';
         subjectcContent.style.display = 'none';
+        feeContent.style.display = 'none';
+        rexContent.style.display = 'none';
         genshinContent.style.display = 'none';
         teamsContent.style.display = 'none';
         conclusionContent.style.display = 'none';
@@ -25,6 +29,8 @@ function showContent(section) {
         interviewsContent.style.display = 'block';
         gingerbreadContent.style.display = 'none';
         subjectcContent.style.display = 'none';
+        feeContent.style.display = 'none';
+        rexContent.style.display = 'none';
         genshinContent.style.display = 'none';
         teamsContent.style.display = 'none';
         conclusionContent.style.display = 'none';
@@ -33,6 +39,8 @@ function showContent(section) {
         interviewsContent.style.display = 'none';
         gingerbreadContent.style.display = 'flex';
         subjectcContent.style.display = 'none';
+        feeContent.style.display = 'none';
+        rexContent.style.display = 'none';
         genshinContent.style.display = 'none';
         teamsContent.style.display = 'none';
         conclusionContent.style.display = 'none';
@@ -41,6 +49,28 @@ function showContent(section) {
         interviewsContent.style.display = 'none';
         gingerbreadContent.style.display = 'none';
         subjectcContent.style.display = 'flex';
+        feeContent.style.display = 'none';
+        rexContent.style.display = 'none';
+        genshinContent.style.display = 'none';
+        teamsContent.style.display = 'none';
+        conclusionContent.style.display = 'none';
+    } else if (section === 'fee') {
+        overviewContent.style.display = 'none';
+        interviewsContent.style.display = 'none';
+        gingerbreadContent.style.display = 'none';
+        subjectcContent.style.display = 'none';
+        feeContent.style.display = 'flex';
+        rexContent.style.display = 'none';
+        genshinContent.style.display = 'none';
+        teamsContent.style.display = 'none';
+        conclusionContent.style.display = 'none';
+    } else if (section === 'rex') {
+        overviewContent.style.display = 'none';
+        interviewsContent.style.display = 'none';
+        gingerbreadContent.style.display = 'none';
+        subjectcContent.style.display = 'none';
+        feeContent.style.display = 'none';
+        rexContent.style.display = 'flex';
         genshinContent.style.display = 'none';
         teamsContent.style.display = 'none';
         conclusionContent.style.display = 'none';
@@ -49,6 +79,8 @@ function showContent(section) {
         interviewsContent.style.display = 'none';
         gingerbreadContent.style.display = 'none';
         subjectcContent.style.display = 'none';
+        feeContent.style.display = 'none';
+        rexContent.style.display = 'none';
         genshinContent.style.display = 'none';
         teamsContent.style.display = 'flex';
         conclusionContent.style.display = 'none';
@@ -57,6 +89,8 @@ function showContent(section) {
         interviewsContent.style.display = 'none';
         gingerbreadContent.style.display = 'none';
         subjectcContent.style.display = 'none';
+        feeContent.style.display = 'none';
+        rexContent.style.display = 'none';
         genshinContent.style.display = 'none';
         genshinContent.style.display = 'block';
         teamsContent.style.display = 'none';
@@ -66,6 +100,8 @@ function showContent(section) {
         interviewsContent.style.display = 'none';
         gingerbreadContent.style.display = 'none';
         subjectcContent.style.display = 'none';
+        feeContent.style.display = 'none';
+        rexContent.style.display = 'none';
         genshinContent.style.display = 'none';
         genshinContent.style.display = 'none';
         teamsContent.style.display = 'none';
@@ -75,6 +111,8 @@ function showContent(section) {
         interviewsContent.style.display = 'none';
         gingerbreadContent.style.display = 'none';
         subjectcContent.style.display = 'none';
+        feeContent.style.display = 'none';
+        rexContent.style.display = 'none';
         teamsContent.style.display = 'none';
         conclusionContent.style.display = 'none';
 
