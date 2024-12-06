@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #9f0b0f; /* #fef5e2 */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../background/chinese-new-year.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -63,12 +63,12 @@ header {
 
 .theme-buttons button {
   font-family: 'Philosopher', sans-serif;
-  background-image: url(../icons/theme-button.png);
+  background-image: url(../icons/theme-button-2.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
-  width: 105px;
+  width: 95px;
   height: 50px;
   cursor: pointer;
   text-align: center;
