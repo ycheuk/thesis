@@ -1,14 +1,19 @@
+@font-face {
+    font-family: 'RealChinese';
+    src: url('../fonts/real_chinese/Real_Chinese.otf') format('opentype');
+}
+
 body {
-  background-color: #fef5e2;
+  background-color: #9f0b0f; /* #fef5e2 */
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   margin: 0;
   padding-top: 70px;
-  color: #92605B;
+  color: #f9dc69;
   font-family: 'Philosopher', sans-serif;
   font-weight: normal;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 2px black;
 }
 
 header {
@@ -56,6 +61,25 @@ header {
   margin: 0;
 }
 
+.theme-buttons button {
+  font-family: 'Philosopher', sans-serif;
+  background-image: url(../icons/theme-button.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  width: 105px;
+  height: 50px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.theme-buttons button:hover {
+    opacity: 0.9;
+}
+
 .content {
   margin-top: 50px;
   display: flex;
@@ -77,9 +101,13 @@ header {
 }
 
 .navigation a {
-    text-decoration: none;
-    color: #92605B;
-    font-size: 24px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #f9dc69;
+}
+
+a {
+  color: #46C7ED;
 }
 
 .navigation li:hover {
@@ -129,11 +157,11 @@ header {
 }
 
 .theme1-text {
-  display: none; /* Hides the text for theme1 */
+  display: block; /* Shows the text for theme1 */
 }
 
 .theme2-text {
-  display: block; /* Shows the text for theme2 */
+  display: none; /* Hides the text for theme2 */
 }
 
 .character_wish {
@@ -243,14 +271,8 @@ h4 {
   text-align: left;
 }
 
-.gingerbread, .subjectc {
+.gingerbread, .subjectc, .fee, .rex {
   margin-left: 25px;
-}
-
-#gingerbread-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .text-with-background {
@@ -280,7 +302,7 @@ h4 {
     height: 100px;
     position: absolute;
     left: 0;
-    top: 85%;
+    top: 90%;
     transform: translateY(-50%);
   }
 
@@ -452,11 +474,33 @@ h4 {
   border: .5px solid #bcc8cf;
 }
 
-
 .conclusion-interviews-table td, .conclusion-interviews-table th {
   padding: 10px;
 }
 
-p {
-  text-shadow: none;
+#gingerbread-content, #subjectc-content, #overview-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.interviewee-title {
+  font-family: 'RealChinese', 'Philosopher', sans-serif;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 35px; /* Adds spacing below the heading */
+}
+
+.interviewee-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.reg-img {
+  width: 300px;
 }
