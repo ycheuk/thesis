@@ -61,19 +61,21 @@ header {
 }
 
 .theme-buttons button {
-  font-family: 'Philosopher', sans-serif;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
   width: 95px;
   height: 50px;
   cursor: pointer;
   text-align: center;
   display: inline-block;
-  margin-right: 10px;
 }
 
 .theme-buttons button:hover {
-    opacity: 0.9;
+    background-color: gray;
 }
 
 .content {
