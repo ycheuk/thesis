@@ -131,3 +131,25 @@ function showContent(section) {
 function changeTheme(theme) {
     document.getElementById("theme-stylesheet").setAttribute("href", theme);
 }
+
+function revealZodiac() {
+    const zodiacSigns = [
+      "Monkey",
+      "Rooster",
+      "Dog",
+      "Pig",
+      "Rat",
+      "Ox",
+      "Tiger",
+      "Rabbit",
+      "Dragon",
+      "Snake",
+      "Horse",
+      "Goat",
+    ];
+
+    const year = parseInt(document.getElementById("year").value);
+    const zodiac = zodiacSigns[year % 12];
+
+    document.getElementById("zodiac-result").innerText = `You are the year of the ${zodiac}!`;
+  }

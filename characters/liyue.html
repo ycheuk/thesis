@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
 
     <link id="theme-stylesheet" rel="stylesheet" href="theme1.css">
-    <title>Liyue</title>
+    <title>China</title>
 </head>
 <body>
     <header>
@@ -21,7 +21,7 @@
         <div class="theme-buttons">
             <button onclick="changeTheme('theme1.css')" class="theme-buttons">Theme 1</button>
             <button onclick="changeTheme('theme2.css')" class="theme-buttons">Theme 2</button>
-            <button onclick="changeTheme('theme3.css')">Theme 3</button>
+            <button onclick="changeTheme('theme3.css')" class="theme-buttons">Theme 3</button>
         </div>
         <div class="header-exit">
             <a href="../index.html" class="back-link">
@@ -40,7 +40,7 @@
                   <li><a class="fee" href="#fee" onclick="showContent('fee')">Fee</a></li>
                   <li><a class="rex" href="#rex" onclick="showContent('rex')">Rex</a></li>
               </ul>
-              <li><a href="#genshin" onclick="showContent('genshin')">Genshin Impact</a></li>
+              <li><a href="#genshin" onclick="showContent('genshin')">Chinese New Year</a></li>
               <!-- <li><a href="#teams" onclick="showContent('teams')">Teams</a></li> -->
               <li><a href="#conclusion-build" onclick="showContent('conclusion')">Conclusion</a></li>
           </ul>
@@ -292,7 +292,52 @@
         </div>
       </div>
       <div id="genshin-content" class="genshin-content">
-
+        <h1>What's Your Chinese Zodiac?</h1>
+        <div class="interviewee-body">
+          <center>
+            <div>
+              <p><b><u>Zodiac Sign Calculator</u></b></p>
+              <fieldset>
+                <label>Month</label>
+                <select id="month" name="month">
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+                <br>
+                <label for="day">Day</label>
+                <select id="day" name="day">
+                  <script>
+                    for (let day = 1; day <= 31; day++) {
+                      document.write(`<option value="${day}">${day}</option>`);
+                    }
+                  </script>
+                </select>
+                <br>
+                <label for="year">Year</label>
+                <select id="year" name="year">
+                  <script>
+                    for (let year = 2030; year >= 1930; year--) {
+                      document.write(`<option value="${year}">${year}</option>`);
+                    }
+                  </script>
+                </select>
+                <br>
+              </fieldset>
+              <button type="button" name="button" onclick="revealZodiac()">Reveal my sign</button>
+              <p id="zodiac-result"></p>
+            </div>
+          </center>
+        </div>
       </div>
       <div id="teams-content" class="teams-content">
 
