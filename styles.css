@@ -176,45 +176,6 @@ nav li.active a {
 
 .character-link:hover {
   cursor: pointer;
-}
-
-/* .geo {
-  filter: drop-shadow(0 0 0.2rem yellow);
-}
-
-.dendro {
-  filter: drop-shadow(0 0 0.2rem green);
-}
-
-.cryo {
-  filter: drop-shadow(0 0 0.2rem cyan);
-}
-
-.hydro {
-  filter: drop-shadow(0 0 0.2rem blue);
-}
-
-.electro {
-  filter: drop-shadow(0 0 0.2rem purple);
-}
-
-.pyro {
-  filter: drop-shadow(0 0 0.2rem red);
-}
-
-.anemo {
-  filter: drop-shadow(0 0 0.2rem aqua);
-} */
-
-.rarity-4 {
-  background-image: url(background/BG_Item_4_Star.png);
-  background-size: cover;
-}
-
-.rarity-5 {
-  background-image: url(background/BG_Item_5_Star.png);
-  background-size: cover;
-}
 
 .character-icon-wrapper {
   width: 100%;
