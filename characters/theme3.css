@@ -474,7 +474,7 @@ h4 {
   padding: 10px;
 }
 
-#gingerbread-content, #subjectc-content, #fee-content, #overview-content {
+#gingerbread-content, #subjectc-content, #fee-content, #rex-content, #overview-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -482,7 +482,7 @@ h4 {
 }
 
 .interviewee-title {
-  font-family: 'RealChinese', 'Philosopher', sans-serif;
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
   font-size: 3em;
   font-weight: bold;

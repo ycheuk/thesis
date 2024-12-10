@@ -479,7 +479,7 @@ h4 {
   padding: 10px;
 }
 
-#gingerbread-content, #subjectc-content, #fee-content, #overview-content {
+#gingerbread-content, #subjectc-content, #fee-content, #rex-content, #overview-content {
   display: flex;
   flex-direction: column;
   align-items: center;
