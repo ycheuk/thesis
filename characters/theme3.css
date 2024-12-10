@@ -1,19 +1,23 @@
+@font-face {
+    font-family: 'RealChinese';
+    src: url('../fonts/real_chinese/Real_Chinese.otf') format('opentype');
+}
+
 body {
-  /* background-image: black; until i find an image*/
-  background-color: black;
+  background-color: white;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   margin: 0;
   padding-top: 70px;
-  color: #bcc8cf;
-  font-family: 'Philosopher', sans-serif;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
   font-weight: normal;
-  text-shadow: 1px 1px 2px black;
+  line-height: 23px;
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: black;
   color: #000000;
   display: flex;
   position: fixed;
@@ -54,7 +58,23 @@ header {
 .header-title {
   font-size: 24px;
   color: #d2bc8e;
-  margin: 0;
+  margin: 20px;
+}
+
+.theme-buttons button {
+  font-family: 'Philosopher', sans-serif;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 95px;
+  height: 50px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.theme-buttons button:hover {
+    opacity: 0.9;
 }
 
 .content {
@@ -78,9 +98,18 @@ header {
 }
 
 .navigation a {
-    text-decoration: none;
-    color: #bcc8cf;
-    font-size: 24px;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+}
+
+a {
+  color: #46C7ED;
+}
+
+.navigation li:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .content-container {
@@ -122,6 +151,14 @@ header {
 .overview-content h1 {
   margin: 5px;
   margin-left: 0;
+}
+
+.theme1-text {
+  display: block; /* Shows the text for theme1 */
+}
+
+.theme2-text {
+  display: none; /* Hides the text for theme2 */
 }
 
 .character_wish {
@@ -231,22 +268,40 @@ h4 {
   text-align: left;
 }
 
-.gingerbread-table {
-  /* margin-right: 100px; */
-  margin-left: 50px;
-  border-collapse: collapse;
-  width: 70%;
-  margin-bottom: 50px;
-
+.gingerbread, .subjectc, .fee, .rex {
+  margin-left: 25px;
 }
 
-.gingerbread-table th, .gingerbread-table tr {
-  border: .5px solid #bcc8cf;
-}
+.text-with-background {
+  background-image: url('../icons/traditional-book.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 300px;
+  width: 300px;
+  padding: 0;
+  margin: 0;
+  padding-right: 20px;
+  color: black;
+  text-shadow: none;
+  position: relative;
+  }
 
-.gingerbread-table td, .gingerbread-table th {
-  padding: 10px;
-}
+  .text-with-background::before {
+    content: '';
+    background-image: url('../icons/person.png');
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 90%;
+    transform: translateY(-50%);
+  }
 
 .artifact-pieces {
   width: 30px;
@@ -254,10 +309,6 @@ h4 {
 
 .artifact-title {
   margin-left: 50px;
-}
-
-.gingerbread-content {
-  display: flex;
 }
 
 .artifact-recommendations {
@@ -420,7 +471,33 @@ h4 {
   border: .5px solid #bcc8cf;
 }
 
-
 .conclusion-interviews-table td, .conclusion-interviews-table th {
   padding: 10px;
+}
+
+#gingerbread-content, #subjectc-content, #overview-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.interviewee-title {
+  font-family: 'RealChinese', 'Philosopher', sans-serif;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 35px; /* Adds spacing below the heading */
+}
+
+.interviewee-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.reg-img {
+  width: 300px;
 }
