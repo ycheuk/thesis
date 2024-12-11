@@ -10,7 +10,7 @@ body {
   background-size: cover;
   margin: 0;
   padding-top: 70px;
-  color: #f9dc69;
+  color: #E0E4BF;
   font-family: 'Philosopher', sans-serif;
   font-weight: normal;
   text-shadow: 1px 1px 2px black;
@@ -104,7 +104,7 @@ header {
 .navigation a {
   text-decoration: none;
   font-size: 24px;
-  color: #f9dc69;
+  color: #E0E4BF;
 }
 
 a {
