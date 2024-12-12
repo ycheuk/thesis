@@ -353,7 +353,6 @@ h4 {
   align-items: center;
   align-content: center;
   text-align: center;
-  padding: 15px;
 }
 
 .genshin-table {
@@ -517,4 +516,8 @@ h4 {
 
 .info-box h2 {
   color: #282E15;
+}
+
+.info-box h1 {
+  margin: 0;
 }

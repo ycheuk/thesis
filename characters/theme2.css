@@ -522,3 +522,8 @@ h4 {
 .info-box h2 {
   color: #282E15;
 }
+
+.selection-box {
+  border-radius: 0.75rem;
+  padding: 5px;
+}

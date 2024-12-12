@@ -294,7 +294,7 @@
       <div id="genshin-content" class="genshin-content">
         <h1 style="font-size: 65px;">Chinese New Year 2025</h1>
         <h1 style="font-size: 35px;">Year of the Snake</h1>
-        <div class="interviewee-body">
+        <div class="interviewee-body" style="margin-bottom: 100px;">
             <div class="info-box">
                 <h3>When is Lunar New Year 2025?</h3>
                 <h2>January 29th</h2>
@@ -308,14 +308,14 @@
                 <h2>Snake</h2>
             </div>
         </div>
-        <h1>What's Your Chinese Zodiac?</h1>
+        <h1 style="font-size: 35px;">What's Your Chinese Zodiac?</h1>
         <div class="interviewee-body">
           <center>
             <div>
               <p><b><u>Zodiac Sign Calculator</u></b></p>
               <fieldset>
-                <label>Month</label>
-                <select id="month" name="month">
+                <label>MONTH</label><br>
+                <select id="month" name="month" class="selection-box">
                   <option value="1">January</option>
                   <option value="2">February</option>
                   <option value="3">March</option>
@@ -329,18 +329,18 @@
                   <option value="11">November</option>
                   <option value="12">December</option>
                 </select>
-                <br>
-                <label for="day">Day</label>
-                <select id="day" name="day">
+                <br><br>
+                <label for="day">DAY</label><br>
+                <select id="day" name="day" class="selection-box">
                   <script>
                     for (let day = 1; day <= 31; day++) {
                       document.write(`<option value="${day}">${day}</option>`);
                     }
                   </script>
                 </select>
-                <br>
-                <label for="year">Year</label>
-                <select id="year" name="year">
+                <br><br>
+                <label for="year">YEAR</label><br>
+                <select id="year" name="year" class="selection-box">
                   <script>
                     for (let year = 2030; year >= 1930; year--) {
                       document.write(`<option value="${year}">${year}</option>`);
